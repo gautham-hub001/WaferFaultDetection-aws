@@ -102,7 +102,7 @@ def trainRouteClient():
 port = int(os.getenv("PORT",5000)) #for cloud
 if __name__ == "__main__":
     host = '0.0.0.0'
-    #port = 5001   #for local
+    #port = 5004   #for local
     httpd = simple_server.make_server(host, port, app)
     # print("Serving on %s %d" % (host, port))
     httpd.serve_forever()
