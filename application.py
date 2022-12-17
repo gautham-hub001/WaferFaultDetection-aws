@@ -100,7 +100,7 @@ def trainRouteClient():
     return Response("Training successfull!!")
 
 port = int(os.getenv("PORT",5000)) #for cloud
-if __name__ == "__main__":
+if __name__ == "__application__":
     host = '0.0.0.0'
     # port = 5004   #for local
     httpd = simple_server.make_server(host, port, app)
